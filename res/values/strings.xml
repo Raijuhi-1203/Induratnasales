@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Induratna Sales</string>
+    <string name="con">https://induratnasales.codiee.co.in/AppWebService.asmx</string>
+    <string name="maincon">https://inducrm.adwordbee.com/auth/</string>
+    <string name="batch">batch</string>
+
+    <string-array name="pay_array">
+        <item>UPI</item>
+        <item>Cash</item>
+        <item>Online Transfer</item>
+        <item>Cheque</item>
+    </string-array>
+
+</resources>

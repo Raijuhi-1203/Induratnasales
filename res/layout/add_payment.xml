@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:text="Shop"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_round">
+
+            <Spinner
+                android:id="@+id/spnrshop"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:text="Amount (₹)"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:text="Payment Mode"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_round">
+
+            <Spinner
+                android:id="@+id/sptypepay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI Name"
+            android:id="@+id/txupinm"
+            android:visibility="gone"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:id="@+id/upiname"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction ID"
+            android:id="@+id/txtransid"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:id="@+id/trans_id"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A/C Holder Name"
+            android:id="@+id/txacholdernm"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:id="@+id/acholdernm"
+            android:padding="5dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:id="@+id/txbanknm"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:id="@+id/banknm"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheque No."
+            android:id="@+id/txchequeno"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/box_round"
+            android:id="@+id/chequeno"
+            android:padding="5dp" />
+
+
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/sptypepay"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnround"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Add Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
